@@ -1,0 +1,130 @@
+<body>
+  <head>
+    <title>Fire Department Salary Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+<div id="form_container">
+<div class="all_forms">
+<h1>Salary Calculator</h1>
+  <h2 id="h2-top">Base annual salary is $55,563</h2>
+  
+<form method="post" name="form2" id="form2" class="form_calc">
+     <label for="edu"><h2>Have you worked as a paramedic?</h2></label>
+
+    <label for="item4" class="container">Yes
+      <input type="checkbox" id="item4" value="5400" name="paraCkb" onclick='paramedicChkcontrol(0)'>
+      <span class="checkmark"></span>
+    </label>
+
+    <label for="item5" class="container">No
+      <input type="checkbox" id="item5" value="0" name="paraCkb" onclick='paramedicChkcontrol(1)'>
+      <span class="checkmark"></span>
+    </label>
+  </form>
+    
+   <form method="post" name="form3" id="form3" class="form_calc">
+     <label for="edu"><h2>Are you bilingual?</h2></label>
+
+    <label for="item6" class="container">Yes
+      <input type="checkbox" id="item6" value="900" name="bilingCkb" onclick='bilingChkcontrol(0)'>
+      <span class="checkmark"></span>
+    </label>
+
+    <label for="item7" class="container">No
+      <input type="checkbox" id="item7" value="0" name="bilingCkb" onclick='bilingChkcontrol(1)'>
+      <span class="checkmark"></span>
+    </label>
+  </form>
+  </div>
+  
+  <div class="all_forms">
+  
+<form method="post" name="form1" id="form1" class="form_calc">
+  <label for="edu"><h2>Level of Education</h2></label>
+<label for="item1" class="container">Associates
+  <input type="checkbox" id="item1" value="2000" name="ckb" onclick='eduChkcontrol(0)'>
+  <span class="checkmark"></span>
+</label>
+
+<label for="item2" class="container">Bachelors
+  <input type="checkbox" id="item2" value="4000" name="ckb" onclick='eduChkcontrol(1)'>
+  <span class="checkmark"></span>
+</label>
+
+<label for="item3" class="container">Masters
+  <input type="checkbox" id="item3" value="6000" name="ckb" onclick='eduChkcontrol(2)'>
+  <span class="checkmark"></span>
+</label>
+  </form> 
+  </div>
+  
+  <div class="all_forms">
+  <form method="post" name="form5" id="form5" class="form_calc">   
+    <label for="fi"><h2>Fire Investigator?</h2></label>
+
+    <label for="item8" class="container">Yes
+      <input type="checkbox" id="item8" value="600" name="fiCkb" onclick='fiChkcontrol(0)'>
+      <span class="checkmark"></span>
+    </label>
+
+    <label for="item9" class="container">No
+      <input type="checkbox" id="item9" value="0" name="fiCkb" onclick='fiChkcontrol(1)'>
+      <span class="checkmark"></span>
+    </label>        
+  </form>
+  
+  <form method="post" name="form6" id="form6" class="form_calc">   
+    <label for="edu"><h2>Arson Investigator?</h2></label>
+
+    <label for="item10" class="container">Yes
+      <input type="checkbox" id="item10" value="900" name="aiCkb" onclick='aiChkcontrol(0)'>
+      <span class="checkmark"></span>
+    </label>
+
+    <label for="item11" class="container">No
+      <input type="checkbox" id="item11" value="0" name="aiCkb" onclick='aiChkcontrol(1)'>
+      <span class="checkmark"></span>
+    </label>        
+  </form>
+  
+   <form method="post" name="form7" id="form7" class="form_calc">   
+    <label for="edu"><h2>Fire Inspector?</h2></label>
+
+    <label for="item12" class="container">Yes
+      <input type="checkbox" id="item12" value="1200" name="finsCkb" onclick='finsChkcontrol(0)'>
+      <span class="checkmark"></span>
+    </label>
+
+    <label for="item13" class="container">No
+      <input type="checkbox" id="item13" value="0" name="finsCkb" onclick='finsChkcontrol(1)'>
+      <span class="checkmark"></span>
+    </label>        
+  </form>
+  </div>
+  
+  <div class="all_forms">
+  
+  <form method="post" name="form4" id="form4" class="form_calc">
+    <label for="edu"><h2>Ambulance - $25/shift</h2></label>
+    <select name="ambulance" id="ambulance">
+    </select>    
+    </div>
+    <p id="total_salary" class="total_salary"></p>
+ 
+   
+  <div class= "buttonDiv">
+  <input type="button" class="button" value="Calculate Total" id="calcButton">
+    
+    <input type="button" class="button" value="Reset" id="resetBtn" onClick="clearResult()" />
+  </div>
+ </div>
+
+  </form>
+
+<script type="text/javascript" src="js/calc.js">
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+</body>
